@@ -301,7 +301,7 @@ generate_static_system() {
 	uci -q batch <<-EOF
 		delete system.@system[0]
 		add system system
-		set system.@system[-1].hostname='FastSSH'
+		set system.@system[-1].hostname='www.fastssh.com'
 		set system.@system[-1].timezone='UTC+7'
 		set system.@system[-1].ttylogin='0'
 		set system.@system[-1].log_size='64'
